@@ -1,0 +1,24 @@
+{
+  "project_id": "PRJ-ARXA-PROTOTYPE",
+  "claim_scope": "synthetic industrial scenario estimate",
+  "forecast_mae": 0.03925637350608181,
+  "degraded_data_mae": 0.03972781104849911,
+  "baseline": {
+    "cost": 540000,
+    "preventive_actions": 0,
+    "unmitigated_failures": 6
+  },
+  "risk_policy": {
+    "cost": 484000,
+    "preventive_actions": 22,
+    "unmitigated_failures": 0
+  },
+  "real_option": {
+    "act_cost": 22000,
+    "defer_expected_cost": 65489.03256943528,
+    "decision": "act",
+    "option_value": 43489.03256943528
+  },
+  "prediction_passed": true,
+  "economic_impact_status": "modeled estimate, not realized savings"
+}

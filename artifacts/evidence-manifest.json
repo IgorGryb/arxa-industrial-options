@@ -1,0 +1,28 @@
+{
+  "project_id": "PRJ-ARXA-PROTOTYPE",
+  "generated": "2026-10-25",
+  "data_class": "synthetic",
+  "artifacts": [
+    {
+      "artifact_id": "ART-D51703092B1E",
+      "path": "artifacts/results.json",
+      "sha256": "db6481fbb21ad0540791c7da7fc18fa7a40b9645892aa6ec3eb10330e23ff720",
+      "validation_status": "tested",
+      "reproduce_command": "make reproduce"
+    },
+    {
+      "artifact_id": "ART-BF1D313FA124",
+      "path": "artifacts/decision-memo.md",
+      "sha256": "343ede913bf6685a13f00784f9086010671e362c40e9d647fe9cf3ccd33c2f99",
+      "validation_status": "tested",
+      "reproduce_command": "make reproduce"
+    },
+    {
+      "artifact_id": "ART-934B73774A10",
+      "path": "data/synthetic_telemetry.csv",
+      "sha256": "e819cfdbcc22e957fb5984463974d2a3df70c1c2982daa775d18858be1571d73",
+      "validation_status": "tested",
+      "reproduce_command": "make reproduce"
+    }
+  ]
+}
