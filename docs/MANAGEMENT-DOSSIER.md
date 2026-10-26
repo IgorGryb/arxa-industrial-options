@@ -121,3 +121,109 @@ Each slide and dashboard number must point back to this dossier and its model/ru
 ## Provenance and authoring boundary
 
 This management model was authored with an AI agent from existing project sources, course materials and the approved user direction. It demonstrates the documented design and review process, not independent proof that the user performed every implementation step. All economic sample cases are synthetic.
+
+## Multidimensional reinforcement and technical depth
+
+Management connects technical/domain depth to product, operating and capital decisions; it does not replace that depth. The following application mappings are candidate design hypotheses, not proven benefits or claims of independent competence.
+
+[Canonical mechanisms and evidence boundaries](../../../00.%20ARCHIVE%20SYSTEM/portfolio/REINFORCEMENT-MAP.yaml). [Full qualification records and source links](../../../00.%20ARCHIVE%20SYSTEM/portfolio/QUALIFICATION-INVENTORY.yaml). Program metadata has been reviewed; module-level support is not asserted for these candidate links.
+
+### RF-01 — Financing-constrained capital allocation
+
+**Career anchors:** EXP-SANTANDER-2022, EXP-BNP-2025.
+**Learning sources (official titles):** Financial Engineering and Risk Management; Valuation Modeling; Advanced Statistics for Data Science; Business and Financial Modeling.
+
+| Dimension | Proposed application |
+|---|---|
+| Technical | Cash-flow ledgers, stochastic assumptions, sensitivity, constraints, separation of forecast and decision. |
+| Product | A decision package comparing immediate investment, staging, deferral and abandonment. |
+| Operating | Model owner reconciles inputs; reviewer checks liquidity and maturity before capital authorization. |
+| Finance | Project value and financing feasibility are separate outputs; test debt service and refinancing restrictions. |
+
+**Reinforcement mechanism (hypothesis):** Valuation identifies potential value; financing and operating constraints filter actions that can actually be funded.
+
+**Failure/cost of integration:** Common optimistic assumptions can bias valuation and liquidity together; integration does not remove model risk.
+
+**Comparison to run:** Compare NPV-only ranking with liquidity-constrained fixed rules under identical external scenarios; include no refinancing and delayed cash flows.
+
+**Next option and activation condition:** Extend to another asset or staged industrial decision only after the ledger and action constraints pass checks.
+
+### RF-04 — Infrastructure design and traceable change governance
+
+**Career anchors:** EXP-SDG-2021, EXP-PORTFOLIO-2023.
+**Learning sources (official titles):** Construction Management; Commercial Real Estate Modeling; IBM Systems Analyst; IBM AI Product Manager.
+
+| Dimension | Proposed application |
+|---|---|
+| Technical | Requirements/decision/version graph, classification confidence, document lineage and access boundaries. |
+| Product | A controlled coordination package for one design/change use case, not claimed full BIM integration. |
+| Operating | Define authority to approve changes, affected deliverables and the downstream recipient. |
+| Finance | Estimate rework/coordination cost and delay exposure; distinguish estimates from achieved savings. |
+
+**Reinforcement mechanism (hypothesis):** Domain-aware change control can make documentation decisions visible to cost, schedule and delivery owners.
+
+**Failure/cost of integration:** Incomplete document coverage or wrong automated classification can hide a material dependency.
+
+**Comparison to run:** Compare file-list review with traceable change review on the same synthetic change set, including missing and misclassified documents.
+
+**Next option and activation condition:** Expand the document class only after traceability and exception handling survive a review.
+
+### RF-05 — Industrial data translated into staged operating investment
+
+**Career anchors:** EXP-SDG-2021, EXP-SANTANDER-2022, EXP-PORTFOLIO-2023.
+**Learning sources (official titles):** IBM Machine Learning; Data Science Decisions in Time; Microsoft Data Architecture for Modern Data Stacks; Financial Management; Valuation Modeling.
+
+| Dimension | Proposed application |
+|---|---|
+| Technical | Time-aware validation, data quality, prediction thresholds, maintenance actions and constrained scenarios. |
+| Product | Decision support for one maintenance or supply-chain intervention, not a general industrial platform. |
+| Operating | The model must lead to an executable intervention with capacity, owner, timing and fallback. |
+| Finance | Include false positives, missed failures, downtime and intervention cost; assess staged investment and liquidity separately. |
+
+**Reinforcement mechanism (hypothesis):** Forecast accuracy has business value only through an executable action and its net operating/financing consequences.
+
+**Failure/cost of integration:** A better predictive metric may worsen operating cost; distribution shifts and scarce intervention capacity can reverse the result.
+
+**Comparison to run:** Compare fixed rule, forecast-only rule and cost/capacity-constrained action on the same cases with degraded data.
+
+**Next option and activation condition:** Add an asset or data source only after action-level benefit and failure bounds are understood.
+
+### RF-06 — Management metrics backed by financial and data controls
+
+**Career anchors:** EXP-BNP-2025, EXP-SANTANDER-2022.
+**Learning sources (official titles):** Microsoft Power BI Data Analyst; Microsoft Power BI Developer and Architect; BI Essentials for Finance Analysts (Power BI Edition); IBM Data Architecture; Business Analytics with Excel.
+
+| Dimension | Proposed application |
+|---|---|
+| Technical | Metric lineage, schema/grain, denominator, reconciliation, access and stale-data controls. |
+| Product | A decision dashboard and memo derived from canonical models, not an independent narrative. |
+| Operating | Metric owner handles exceptions and version changes; decision owner accepts the reporting scope. |
+| Finance | Separate cash, value, revenue, volume and estimates; define perspective and period before aggregation. |
+
+**Reinforcement mechanism (hypothesis):** Shared definitions connect technical data quality with management interpretation and financial control.
+
+**Failure/cost of integration:** A polished dashboard can conceal incompatible populations or denominators; centralization creates common-mode errors.
+
+**Comparison to run:** Compare dashboard output to underlying records; inject missing/duplicate/stale data and test invalidation.
+
+**Next option and activation condition:** Reuse a metric across projects only when its unit, grain and decision meaning match.
+
+### RF-07 — Advanced technical options with explicit activation conditions
+
+**Career anchors:** EXP-PORTFOLIO-2023.
+**Learning sources (official titles):** Algorithms; Probabilistic Graphical Models; Statistical Methods for Computer Science; IBM AI Engineering; IBM DevOps and Software Engineering; Decentralized Finance (DeFi): The Future of Finance; Building AI Cloud Apps with Microsoft Azure.
+
+| Dimension | Proposed application |
+|---|---|
+| Technical | Algorithmic complexity, probabilistic inference, ML evaluation, reproducible delivery and optional programmable-contract design. |
+| Product | A menu of technical options attached to explicit unmet requirements; no automatic blockchain/ML requirement. |
+| Operating | Assess skill/resource needs, maintenance, failure recovery, security review and vendor exit before activation. |
+| Finance | Compare incremental decision benefit with integration, operating and switching cost; preserve a simpler baseline. |
+
+**Reinforcement mechanism (hypothesis):** Technical breadth supplies alternative solution paths; governance makes selection conditional on a demonstrated bottleneck.
+
+**Failure/cost of integration:** Complexity can exceed the value of the problem; a course does not establish production security or deployability.
+
+**Comparison to run:** Specify a bottleneck first, then benchmark the candidate against the simplest adequate approach with negative and resource-limit cases.
+
+**Next option and activation condition:** Activate one technical extension only when it resolves a material assumption and its cost/risk is justified; otherwise retain as observing.

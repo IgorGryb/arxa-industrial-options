@@ -43,3 +43,9 @@ Distribution shift, sensor quality and intervention effectiveness may invalidate
 Validate intervention effectiveness and adoption costs before broadening to a platform.
 
 [Full management dossier](MANAGEMENT-DOSSIER.md)
+
+## Technical and cross-domain foundation
+
+This design preserves the technical, product, operating and financial strands together. Candidate connections: Financing-constrained capital allocation; Infrastructure design and traceable change governance; Industrial data translated into staged operating investment; Management metrics backed by financial and data controls; Advanced technical options with explicit activation conditions.
+
+The full dossier states the source programs, mechanisms, integration risks and comparison tests. These are development options, not established synergistic returns.
