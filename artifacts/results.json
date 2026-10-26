@@ -9,15 +9,17 @@
     "unmitigated_failures": 6
   },
   "risk_policy": {
-    "cost": 484000,
+    "cost": 484000.0,
     "preventive_actions": 22,
-    "unmitigated_failures": 0
+    "unmitigated_failures": 0.0
   },
   "real_option": {
     "act_cost": 22000,
     "defer_expected_cost": 65489.03256943528,
     "decision": "act",
-    "option_value": 43489.03256943528
+    "cost_gap": 43489.03256943528,
+    "scope": "one-step assumed cost comparison, not a real-option valuation",
+    "learning_credit_status": "exogenous assumption, not measured information value"
   },
   "prediction_passed": true,
   "economic_impact_status": "modeled estimate, not realized savings"

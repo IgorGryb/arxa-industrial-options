@@ -6,14 +6,14 @@
     {
       "artifact_id": "ART-D51703092B1E",
       "path": "artifacts/results.json",
-      "sha256": "db6481fbb21ad0540791c7da7fc18fa7a40b9645892aa6ec3eb10330e23ff720",
+      "sha256": "ad142ba69b6ea76c940a504f6ecd5a733298e0ffc946dfad208a19e9158ffa38",
       "validation_status": "tested",
       "reproduce_command": "make reproduce"
     },
     {
       "artifact_id": "ART-BF1D313FA124",
       "path": "artifacts/decision-memo.md",
-      "sha256": "343ede913bf6685a13f00784f9086010671e362c40e9d647fe9cf3ccd33c2f99",
+      "sha256": "068b771fc4ef8445886caf383cd02fc0b3d1bdcb24e48b9d068a6eece49e7510",
       "validation_status": "tested",
       "reproduce_command": "make reproduce"
     },
