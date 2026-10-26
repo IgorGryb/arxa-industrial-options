@@ -14,6 +14,8 @@ def telemetry(n=80):
         rows.append({"period":i+1,"vibration":vibration,"temperature":temperature,"risk":risk,"failure":failure})
     return rows
 def forecast(rows, degraded=False):
+    if not rows: raise ValueError('Nonempty time-ordered observations required')
+    if any(not isinstance(r.get('risk'),(int,float)) or not math.isfinite(r['risk']) or not 0<=r['risk']<=1 for r in rows): raise ValueError('Invalid synthetic risk score')
     errors=[]; preds=[]
     for i,row in enumerate(rows):
         if i<5: pred=.1
@@ -23,15 +25,23 @@ def forecast(rows, degraded=False):
             pred=sum(values)/len(values) if values else .1
         preds.append(pred); errors.append(abs(pred-row["risk"]))
     return preds,sum(errors)/len(errors)
-def policy_cost(rows,preds,threshold=.55,preventive=22000,failure_cost=90000):
+def policy_cost(rows,preds,threshold=.55,preventive=22000,failure_cost=90000,efficacy=1.,max_actions=None):
+    if len(rows)!=len(preds): raise ValueError('Prediction length mismatch')
+    if any(not isinstance(v,(int,float)) or not math.isfinite(v) for v in (threshold,preventive,failure_cost,efficacy)): raise ValueError('Finite assumptions required')
+    if not 0<=threshold<=1 or not 0<=efficacy<=1 or min(preventive,failure_cost)<0: raise ValueError('Invalid policy assumptions')
+    if max_actions is not None and (type(max_actions) is not int or max_actions<0): raise ValueError('Invalid capacity')
+    if any(not math.isfinite(p) or not 0<=p<=1 for p in preds): raise ValueError('Invalid prediction')
     cost=0; actions=0; failures=0
     for row,p in zip(rows,preds):
-        if p>=threshold: cost+=preventive; actions+=1
+        if p>=threshold and (max_actions is None or actions<max_actions):
+            cost+=preventive+row['failure']*(1-efficacy)*failure_cost; actions+=1
+            failures+=row['failure']*(1-efficacy)
         elif row["failure"]: cost+=failure_cost; failures+=1
     return {"cost":cost,"preventive_actions":actions,"unmitigated_failures":failures}
 def real_option(current_risk,preventive=22000,failure_cost=90000,learning_value=5000):
+    if any(not isinstance(v,(int,float)) or not math.isfinite(v) for v in (current_risk,preventive,failure_cost,learning_value)) or not 0<=current_risk<=1 or min(preventive,failure_cost,learning_value)<0: raise ValueError('Invalid act/defer assumptions')
     act=preventive; defer=current_risk*failure_cost-learning_value
-    return {"act_cost":act,"defer_expected_cost":defer,"decision":"act" if act<defer else "defer","option_value":abs(defer-act)}
+    return {"act_cost":act,"defer_expected_cost":defer,"decision":"act" if act<defer else "defer","cost_gap":abs(defer-act),"scope":"one-step assumed cost comparison, not a real-option valuation","learning_credit_status":"exogenous assumption, not measured information value"}
 def run(root: Path):
     rows=telemetry(); (root/"data").mkdir(parents=True,exist_ok=True); (root/"artifacts").mkdir(parents=True,exist_ok=True)
     with (root/"data/synthetic_telemetry.csv").open("w",newline="",encoding="utf-8") as f:

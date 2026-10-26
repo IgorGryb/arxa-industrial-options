@@ -2,7 +2,7 @@
 
 ## Method
 
-Rolling risk forecast, threshold policy, scenario expected-cost comparison, data-quality degradation test and a simple act-versus-defer real-option calculation.
+Rolling synthetic-index forecast, threshold-policy scenarios, data-quality tests and an assumed one-step act/defer cost comparison; not a calibrated failure model or real-option valuation.
 
 ## Intended use
 

@@ -4,7 +4,7 @@
 
 Can a transparent predictive-maintenance scenario model connect data quality, failure risk, operating cost and the option to act or defer?
 
-The project turns a broad platform concept into one deterministic vertical slice. Rolling risk forecast, threshold policy, scenario expected-cost comparison, data-quality degradation test and a simple act-versus-defer real-option calculation.
+The project turns a broad platform concept into one deterministic vertical slice. Rolling synthetic-index forecast, threshold-policy scenarios, data-quality tests and an assumed one-step act/defer cost comparison; not a calibrated failure model or real-option valuation.
 
 **Evidence available:** source map, pre-test prediction, code, unit and negative tests, machine-readable result and SHA-256 evidence manifest.
 

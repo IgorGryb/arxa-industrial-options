@@ -4,7 +4,7 @@
 
 **Choice:** I selected a narrow vertical slice with an explicit baseline and falsification criterion instead of treating existing documentation as implementation evidence.
 
-**Execution:** Rolling risk forecast, threshold policy, scenario expected-cost comparison, data-quality degradation test and a simple act-versus-defer real-option calculation.
+**Execution:** Rolling synthetic-index forecast, threshold-policy scenarios, data-quality tests and an assumed one-step act/defer cost comparison; not a calibrated failure model or real-option valuation.
 
 **Mistake risk:** the fixture can overstate generality. I address that by labeling provenance, keeping alternative explanations and separating technical from external validation.
 

@@ -1,0 +1,113 @@
+{
+  "id": "ARXA-MANAGEMENT-REVIEW-001",
+  "scope": "synthetic index forecast and assumed intervention scenarios",
+  "forecast_mae": 0.03925637350608181,
+  "degraded_data_mae": 0.03972781104849911,
+  "baseline_cost": 540000,
+  "scenarios": [
+    {
+      "efficacy": 0,
+      "capacity": 0,
+      "cost": 540000,
+      "preventive_actions": 0,
+      "unmitigated_failures": 6
+    },
+    {
+      "efficacy": 0,
+      "capacity": 2,
+      "cost": 584000,
+      "preventive_actions": 2,
+      "unmitigated_failures": 6
+    },
+    {
+      "efficacy": 0,
+      "capacity": 10,
+      "cost": 760000,
+      "preventive_actions": 10,
+      "unmitigated_failures": 6
+    },
+    {
+      "efficacy": 0,
+      "capacity": null,
+      "cost": 1024000,
+      "preventive_actions": 22,
+      "unmitigated_failures": 6
+    },
+    {
+      "efficacy": 0.5,
+      "capacity": 0,
+      "cost": 540000,
+      "preventive_actions": 0,
+      "unmitigated_failures": 6
+    },
+    {
+      "efficacy": 0.5,
+      "capacity": 2,
+      "cost": 584000.0,
+      "preventive_actions": 2,
+      "unmitigated_failures": 6.0
+    },
+    {
+      "efficacy": 0.5,
+      "capacity": 10,
+      "cost": 670000.0,
+      "preventive_actions": 10,
+      "unmitigated_failures": 5.0
+    },
+    {
+      "efficacy": 0.5,
+      "capacity": null,
+      "cost": 754000.0,
+      "preventive_actions": 22,
+      "unmitigated_failures": 3.0
+    },
+    {
+      "efficacy": 1,
+      "capacity": 0,
+      "cost": 540000,
+      "preventive_actions": 0,
+      "unmitigated_failures": 6
+    },
+    {
+      "efficacy": 1,
+      "capacity": 2,
+      "cost": 584000,
+      "preventive_actions": 2,
+      "unmitigated_failures": 6
+    },
+    {
+      "efficacy": 1,
+      "capacity": 10,
+      "cost": 580000,
+      "preventive_actions": 10,
+      "unmitigated_failures": 4
+    },
+    {
+      "efficacy": 1,
+      "capacity": null,
+      "cost": 484000,
+      "preventive_actions": 22,
+      "unmitigated_failures": 0
+    }
+  ],
+  "act_defer": {
+    "act_cost": 22000,
+    "defer_expected_cost": 67000.0,
+    "decision": "act",
+    "cost_gap": 45000.0,
+    "scope": "one-step assumed cost comparison, not a real-option valuation",
+    "learning_credit_status": "exogenous assumption, not measured information value"
+  },
+  "management_costs": {
+    "base": 180,
+    "negative": 380,
+    "unit": "synthetic EUR/period"
+  },
+  "model_sha256": "ad8d611ec0b79e7a91a7ce63f43526bd3eecceafcaf23c1a6a54566ace86f217",
+  "limitations": [
+    "Uncalibrated synthetic score",
+    "Efficacy assumed, not causal estimate",
+    "No real-option price",
+    "No observed operating benefit"
+  ]
+}
