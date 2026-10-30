@@ -27,3 +27,4 @@ jobs:
     - name: Run Real-Options & Telemetry Regression Suite
       run: |
         pytest -v --tb=short
+

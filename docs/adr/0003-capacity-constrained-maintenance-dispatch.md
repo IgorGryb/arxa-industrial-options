@@ -21,3 +21,4 @@ ARXA programmatically models 12 operational scenarios combining efficacy levels 
 - When repair efficacy is 0% (ineffective maintenance), unconstrained automated dispatch drives total lifecycle costs to **€1,024,000**—worse than doing nothing (€540,000).
 - This proves mathematically why automated dispatch without human feasibility gates introduces extreme financial risk.
 - Under verified 100% efficacy and capacity constraints, ARXA eliminates all residual failures while capping lifecycle expenses at €484,000.
+

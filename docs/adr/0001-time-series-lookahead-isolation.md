@@ -19,3 +19,4 @@ The time-series ingestion engine implements a forward-rolling evaluation window.
 - Sensor observations for $\tau > t$ are mathematically masked.
 - Feature extraction (vibration variance, thermal decay gradients) uses strictly causal exponential moving averages and causal digital filters.
 - Model prediction accuracy achieves a verified MAE of **0.039256** on nominal inputs and **0.039728** on degraded inputs, confirming that the pipeline is resilient to real-world telemetry noise without lookahead leakage.
+

@@ -92,3 +92,4 @@ paths:
                   optimal_wait_periods:
                     type: integer
                     example: 2
+

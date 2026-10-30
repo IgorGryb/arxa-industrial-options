@@ -25,3 +25,4 @@ Where $S - K$ represents immediate exercise ($\text{Act}$) and the continuation 
 ### Positive Consequences
 - Formally bridges engineering reliability metrics with executive capital budgeting.
 - Demonstrates that optimal timing under uncertainty reduces total lifecycle costs from €540,000 (unmanaged baseline) to €484,000 (real-options optimum), delivering €56,000 in net savings.
+
