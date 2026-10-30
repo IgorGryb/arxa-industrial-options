@@ -1,8 +1,11 @@
 # ARXA — Industrial Telemetry & Real-Options Operating Engine
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![CI](https://github.com/IgorGryb/arxa-industrial-options/actions/workflows/ci.yml/badge.svg)](https://github.com/IgorGryb/arxa-industrial-options/actions)
 [![Tests](https://img.shields.io/badge/Tests-Passing%20(8%2F8)-success.svg)](tests/)
 [![Architecture](https://img.shields.io/badge/Architecture-Real--Options%20Lattice-orange.svg)](#solution--decision-architecture)
+[![OpenAPI 3.1](https://img.shields.io/badge/OpenAPI-3.1%20Contract-green.svg)](api/openapi.yaml)
+[![ADRs](https://img.shields.io/badge/ADR-Architecture%20Decisions-purple.svg)](docs/adr/)
 [![Status](https://img.shields.io/badge/Status-R%26D%20Reference%20Architecture-informational.svg)](#research-integrity--disclaimer)
 
 > **Architectural Mission:** Bridging industrial IoT sensor telemetry and executive capital allocation by embedding physical equipment degradation forecasting into a real-options decision lattice to optimize maintenance timing.

@@ -1,0 +1,94 @@
+openapi: 3.1.0
+info:
+  title: ARXA Industrial Telemetry & Real-Options Decision API
+  description: High-frequency telemetry ingestion, Remaining Useful Life (RUL) forecasting, and binomial real-options capital allocation lattice for mission-critical industrial assets.
+  version: 1.0.0
+  contact:
+    name: Igor Grybek
+    url: https://github.com/IgorGryb/arxa-industrial-options
+paths:
+  /v1/telemetry/stream:
+    post:
+      summary: Stream multi-sensor telemetry readings
+      operationId: streamTelemetry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [asset_id, timestamp, vibration_rms, temperature_c, rpm]
+              properties:
+                asset_id:
+                  type: string
+                  example: "TURBINE-UNIT-04"
+                timestamp:
+                  type: string
+                  format: date-time
+                vibration_rms:
+                  type: number
+                  example: 4.82
+                temperature_c:
+                  type: number
+                  example: 87.4
+                rpm:
+                  type: number
+                  example: 2985.0
+      responses:
+        '200':
+          description: Telemetry ingested; rolling feature vector updated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  degradation_index:
+                    type: number
+                    example: 0.428
+                  status:
+                    type: string
+                    example: "NOMINAL"
+
+  /v1/options/evaluate-deferral:
+    post:
+      summary: Evaluate managerial real option to defer vs. execute maintenance
+      operationId: evaluateRealOption
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [asset_id, capex_strike, volatility, discount_rate]
+              properties:
+                asset_id:
+                  type: string
+                capex_strike:
+                  type: number
+                  example: 50000.0
+                volatility:
+                  type: number
+                  example: 0.28
+                discount_rate:
+                  type: number
+                  example: 0.05
+      responses:
+        '200':
+          description: Binomial lattice valuation and optimal dispatch policy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  action_recommendation:
+                    type: string
+                    enum: [DEFER_AND_MONITOR, IMMEDIATE_INTERVENE, RETIRE_EQUIPMENT]
+                  option_value_defer:
+                    type: number
+                    example: 64200.0
+                  immediate_exercise_npv:
+                    type: number
+                    example: 52100.0
+                  optimal_wait_periods:
+                    type: integer
+                    example: 2
