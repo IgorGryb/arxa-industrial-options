@@ -50,9 +50,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** industrial decision charter  
 **Acceptance test:** An operations/reliability reviewer confirms the decision and proxy limitations.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-055`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L2 → target L5  
-**Open gap:** No selected real asset owner; archive lacks a dedicated supply-chain course.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.2 market-business
 
@@ -62,9 +62,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** industry strategy and adoption memo  
 **Acceptance test:** A practitioner validates priority, buying constraints and rejects unsupported platform-scale claims.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-055`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L2 → target L5  
-**Open gap:** Broad market/ROI claims in the concept corpus are unsupported for publication.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.3 product-service
 
@@ -74,9 +74,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** product and service blueprint  
 **Acceptance test:** Role scenarios correctly handle alert, abstention, override, completed work and observed outcome.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-161`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L3 → target L5  
-**Open gap:** Current prototype calculates a policy but lacks complete operational journeys.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.4 operating-model
 
@@ -86,9 +86,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** maintenance decision runbook  
 **Acceptance test:** Tabletop exercise handles bad sensor, missed failure, unavailable part and disputed recommendation.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-154`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L2 → target L5  
-**Open gap:** No observed maintenance workflow or dedicated supply-chain source.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.5 data-technology
 
@@ -98,9 +98,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** reference architecture and executable pipeline  
 **Acceptance test:** Temporal reproduction, schema drift, missingness, load and access tests meet declared thresholds.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-138`, `C419-140`, `C419-143`, `C419-154`, `C419-161`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L4 → target L5  
-**Open gap:** Synthetic prototype needs public time-series data and realistic operational scale tests.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.6 analytical-model
 
@@ -110,9 +110,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** forecast and policy benchmark  
 **Acceptance test:** Model beats baseline on decision metric, survives degraded-data tests and exposes inconclusive cases.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-121`, `C419-143`, `C419-201`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L4 → target L5  
-**Open gap:** Existing corrected metric is narrow and based on synthetic data.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.7 finance-economics
 
@@ -122,9 +122,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** investment and real-options model  
 **Acceptance test:** Sensitivity identifies decision reversals and an independent finance reviewer checks cash-flow logic.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-197`, `C419-201`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L3 → target L5  
-**Open gap:** Synthetic costs are illustrative and not calibrated to an asset.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.8 risk-security-compliance
 
@@ -134,9 +134,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** industrial AI risk/control matrix  
 **Acceptance test:** Failure injection produces safe abstention/escalation; every critical control has owner and residual risk.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-190`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L2 → target L5  
-**Open gap:** No safety/cyber domain review or implemented access control.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.9 delivery-governance
 
@@ -146,9 +146,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** delivery roadmap and model governance  
 **Acceptance test:** A model/policy update is traced through data, tests, operations, finance and dependent claims.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-161`, `C419-190`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L3 → target L5  
-**Open gap:** Far-future capabilities must be demoted to hypotheses/interfaces until implemented.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.10 evidence-validation-publication
 
@@ -158,9 +158,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** industrial evidence dossier and case study  
 **Acceptance test:** No client, compliance, autonomous-agent or realized-ROI claim survives without evidence; user approves publication.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-190`, `C419-197`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L2 → target L6  
-**Open gap:** Current PDF/web are based on the synthetic baseline and require replacement.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ## 3. Operating state model
 
