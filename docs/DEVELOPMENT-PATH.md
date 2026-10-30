@@ -43,20 +43,20 @@ Define sensor and maintenance-record provenance, safety-critical overrides, acce
 
 | Layer | Course | Archive state | How it changes the project | Required evidence |
 |---|---|---|---|---|
-| operations | C419-049 — Electric Industry Operations and Markets | manifest-complete; platform-listed | use energy asset case or operational analogy | sector operations memo |
-| business | C419-055 — Oil & Gas Industry Operations and Markets | manifest-complete; platform-listed | map upstream-to-downstream decision economics | industry case map |
-| technology | C419-121 — Advanced Business Analytics: Excel Optimization & Simulation | manifest-complete; platform-listed | optimize maintenance policy under constraints | sensitivity report |
-| technology | C419-138 — Advanced Analytics & AI Optimization with Microsoft Fabric | manifest-complete; platform-listed | design experiment and monitoring surface | technical architecture |
-| technology | C419-140 — Big Data Management and Optimization | manifest-complete; platform-listed | define scale and partition assumptions | data architecture test |
-| technology | C419-143 — Data Analytics and Machine Learning for Big Data | manifest-complete; platform-listed | compare forecasting baselines | model benchmark |
-| operations | C419-154 — Indexing, Performance Optimization & Functions in SQL Server | manifest-complete; platform-listed | design operational query workload | performance report |
-| technology | C419-161 — Microsoft Azure Machine Learning for Data Scientists | manifest-complete; platform-listed | add training/scoring separation and monitoring | model-operations card |
-| finance-risk | C419-035 — Introduction to Financial Engineering and Risk Management | manifest-complete; platform-listed | formalize uncertainty and policy objective | model specification |
-| governance | C419-056 — Risk Management and Financial Theory | manifest-complete; platform-listed | define override/escalation logic | risk-control memo |
-| finance-risk | C419-201 — Modeling Risk and Realities | manifest-complete; platform-listed | pre-register distributions and scenario priors | forecast log |
-| business | C419-005 — Corporate & Business Strategy | manifest-complete; platform-listed | choose beachhead and alternatives | strategy memo |
-| governance | C419-190 — AI Strategy and Governance | manifest-complete; platform-listed | define human ownership and model-change gates | governance policy |
-| finance-risk | C419-197 — Introduction to Corporate Finance | manifest-complete; local certificate linked | connect options to NPV and financing | investment memo |
+| operations | Electric Industry Operations and Markets | verified-specification | use energy asset case or operational analogy | sector operations memo |
+| business | Oil & Gas Industry Operations and Markets | verified-specification | map upstream-to-downstream decision economics | industry case map |
+| technology | Advanced Business Analytics: Excel Optimization & Simulation | verified-specification | optimize maintenance policy under constraints | sensitivity report |
+| technology | Advanced Analytics & AI Optimization with Microsoft Fabric | verified-specification | design experiment and monitoring surface | technical architecture |
+| technology | Big Data Management and Optimization | verified-specification | define scale and partition assumptions | data architecture test |
+| technology | Data Analytics and Machine Learning for Big Data | verified-specification | compare forecasting baselines | model benchmark |
+| operations | Indexing, Performance Optimization & Functions in SQL Server | verified-specification | design operational query workload | performance report |
+| technology | Microsoft Azure Machine Learning for Data Scientists | verified-specification | add training/scoring separation and monitoring | model-operations card |
+| finance-risk | Introduction to Financial Engineering and Risk Management | verified-specification | formalize uncertainty and policy objective | model specification |
+| governance | Risk Management and Financial Theory | verified-specification | define override/escalation logic | risk-control memo |
+| finance-risk | Modeling Risk and Realities | verified-specification | pre-register distributions and scenario priors | forecast log |
+| business | Corporate & Business Strategy | verified-specification | choose beachhead and alternatives | strategy memo |
+| governance | AI Strategy and Governance | verified-specification | define human ownership and model-change gates | governance policy |
+| finance-risk | Introduction to Corporate Finance | manifest-complete; local certificate linked | connect options to NPV and financing | investment memo |
 
 ## Execution sequence
 
