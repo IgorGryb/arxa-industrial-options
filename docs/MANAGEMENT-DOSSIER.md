@@ -1,16 +1,21 @@
 # ARXA — management and operating dossier
 
-Project: Arxa Group Systems Architecture. Status: Validated Proprietary Architecture & Reference Implementation.
+Project: `PRJ-ARXA-PROTOTYPE`. Revised 2026-11-04. Status: internally specified design and bounded test; not a deployed service. Source concept: `SRC-PRJ-ARXA-DOC`. Presentation layer: `canonical-venture`. Methods: M-SIPOC, M-RACI, M-FEASIBILITY, M-SCENARIO, M-MEASURE.
 
 ## Decision and business model
 
 A model for managing data-enabled operational transformation and investment choices.
 
+**Source-root business vision (historical concept):** An industrial-intelligence and supply-chain coordination venture linking operational data to production, sourcing and capital decisions.
+**First bounded use:** One asset and failure mode: compare scheduled maintenance, a forecast-only rule and a cost/capacity-constrained intervention before staging capital.
 **Problem:** An industrial analytics initiative can optimize a prediction metric without improving the operational decision or economics.
 **Customer / decision user:** Operations manager, asset owner and finance sponsor
 **Payer:** Industrial business unit; no actual client assumed
 **Value proposition (hypothesis):** A measurable connection between data quality, operating action and incremental economics.
 
+**Commercial model (hypothesis):** A business-to-business subscription for industrial decision support, with onboarding and data-integration cost modeled separately; buyer, price and demand are unvalidated.
+
+**Economic drivers:** expected downtime and failure loss; intervention and false-alarm cost; capacity and inventory; data and integration cost; staged capex and financing.
 **Alternatives:**
 
 - Calendar maintenance: transparent operational baseline
@@ -28,6 +33,16 @@ Market size, paid demand, channel conversion and real service delivery are not e
 | ARXA-REQ-01 | Model output maps to a named operational action | Reviewer checks the corresponding model/process step; records source, exception and outcome. |
 | ARXA-REQ-02 | Baseline remains available on data failure | Reviewer checks the corresponding model/process step; records source, exception and outcome. |
 | ARXA-REQ-03 | Economic benefit is not double-counted | Reviewer checks the corresponding model/process step; records source, exception and outcome. |
+
+## Five-dimensional operating model
+
+| Dimension | Bounded design |
+|---|---|
+| Technical | Controlled operational-data pipeline and scenario model with declared data-quality limits. |
+| Business and product | Industrial decision-support subscription hypothesis anchored in a single asset use case. |
+| Operating | Maintenance owner controls action capacity, handoffs, intervention and exception escalation. |
+| Financial | Compare avoided loss with intervention, integration, operating and staged-capital costs. |
+| Risk and governance | Stress missing or degraded data, false alarms, funding and human override. |
 
 Should: export a decision memo and traceability view. Could: automate repetitive updates after correctness is established.
 **Will not do:** Live machine control, guaranteed downtime reduction, production safety certification.
@@ -68,7 +83,7 @@ Roles are proposed functions, not claims of an existing staffed organization. Re
 | Evaluation | Results and limitations | Decision owner | M-MEASURE | Dashboard + PowerPoint storyboard | Decision memo | Recommendation conditional on evidence | Change owner |
 | Change management | New source, exception or decision | Change owner | M-RACI | Git + local change log | Impact and revised baseline | Dependent outputs marked stale/rechecked | Next stage owner |
 
-Tool configuration is proposed, not connected. Local Markdown/YAML is authoritative. Cloud tools require a separate data-sharing decision. See [toolchain](#).
+Tool configuration is proposed, not connected. Local Markdown/YAML is authoritative. Cloud tools require a separate data-sharing decision. See [toolchain](../../../00.%20ARCHIVE%20SYSTEM/portfolio/TOOLCHAIN-AND-HANDOFF.md).
 
 ## Financial and operating economics
 
@@ -77,6 +92,10 @@ Incremental value = avoided expected downtime/loss - intervention cost - data/pl
 Estimates must disclose cost population, currency, horizon and baseline. Sensitivity changes one driver or a declared scenario while other external assumptions remain equal. Missing required input makes the result unavailable. No forecast is reported as a realized business result.
 
 ## Technology management and build/buy/partner
+
+**Implemented baseline:** A small Python reference model on synthetic industrial scenarios; it does not ingest live plant telemetry.
+**Standard reference architecture (designed, not deployed):** Operational data ingestion, schema and quality controls, analytics, scenario models, enterprise-system interfaces, access control and monitoring.
+**Deferred extensions:** Live ERP/MES/IoT integration, multi-party orchestration, autonomous agents, blockchain contracts and production rollout.
 
 Keep a source/assumption register, a model layer, a review layer and derived communication outputs. Stable IDs connect them. Access labels travel with the data. Maintain exportable local records and a documented exit path before selecting a hosted service.
 
@@ -118,15 +137,31 @@ Sequence: source and mandate → explicit model and handoffs → targeted valida
 
 Each slide and dashboard number must point back to this dossier and its model/run. Storyboard is not a delivered slide deck. No public publishing or external application is performed.
 
+## Qualification and method support
+
+The following are recorded program completions and candidate application routes, not proof of independent competence or implementation:
+- IBM — IBM Data Architecture (`recorded_completed`; QUAL-ibm-data-architecture).
+- Microsoft — Microsoft Data Architecture for Modern Data Stacks (`recorded_completed`; QUAL-microsoft-data-architecture-for-modern-data-stacks).
+- Johns Hopkins University — Advanced Statistics for Data Science (`recorded_completed`; QUAL-advanced-statistics-for-data-science).
+- Corporate Finance Institute (CFI) — Valuation Modeling (`recorded_completed`; QUAL-valuation-modeling).
+- Columbia University — Financial Engineering and Risk Management (`recorded_completed`; QUAL-financial-engineering-and-risk-management).
+
+Methods are grounded only to the recorded source reading scope:
+- `M-SIPOC` — SIPOC i mapa przepływu; full local syllabus; module transcripts not read in this pass.
+- `M-RACI` — RACI i analiza interesariuszy; full local syllabus; module transcripts not read in this pass.
+- `M-FEASIBILITY` — DFD, model stanów i build/buy; full local syllabus; module transcripts not read in this pass.
+- `M-SCENARIO` — Przepływy przyrostowe, wrażliwość scenariuszowa i próg rentowności; full transcript.
+- `M-MEASURE` — Dashboard jako wsparcie decyzji; full local syllabus; module transcripts not read in this pass.
+
 ## Provenance and authoring boundary
 
-This decision model was engineered within the Arxa Group R&D framework. All quantitative models operate on synthetic benchmark data preserving client confidentiality.
+This management model was authored with an AI agent from existing project sources, course materials and the approved user direction. It demonstrates the documented design and review process, not independent proof that the user performed every implementation step. All economic sample cases are synthetic.
 
 ## Multidimensional reinforcement and technical depth
 
 Management connects technical/domain depth to product, operating and capital decisions; it does not replace that depth. The following application mappings are candidate design hypotheses, not proven benefits or claims of independent competence.
 
-[Canonical mechanisms and evidence boundaries](#). [Full qualification records and source links](#). Program metadata has been reviewed; module-level support is not asserted for these candidate links.
+[Canonical mechanisms and evidence boundaries](../../../00.%20ARCHIVE%20SYSTEM/portfolio/REINFORCEMENT-MAP.yaml). [Full qualification records and source links](../../../00.%20ARCHIVE%20SYSTEM/portfolio/QUALIFICATION-INVENTORY.yaml). Program metadata has been reviewed; module-level support is not asserted for these candidate links.
 
 ### RF-01 — Financing-constrained capital allocation
 

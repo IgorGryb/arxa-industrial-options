@@ -12,6 +12,14 @@ A model for managing data-enabled operational transformation and investment choi
 
 The design connects source evidence, explicit assumptions, operating ownership and model checks. Its primary output is a decision package that can be handed to an execution team.
 
+## Source vision and first use
+
+An industrial-intelligence and supply-chain coordination venture linking operational data to production, sourcing and capital decisions.
+
+One asset and failure mode: compare scheduled maintenance, a forecast-only rule and a cost/capacity-constrained intervention before staging capital.
+
+**Commercial hypothesis:** A business-to-business subscription for industrial decision support, with onboarding and data-integration cost modeled separately; buyer, price and demand are unvalidated.
+
 ## Key decision
 
 Use one maintenance case and a transparent baseline; reuse Arctervix financing concepts by reference rather than claim a second independent invention.
@@ -31,6 +39,12 @@ Incremental value = avoided expected downtime/loss - intervention cost - data/pl
 Testable hypothesis: A simple decision policy with controlled data quality can outperform complexity that ignores operating costs.
 
 Negative check: Degrade data and raise intervention cost; favorable economic claims must be recalculated, not retained.
+
+## Technology and evidence status
+
+**Implemented:** A small Python reference model on synthetic industrial scenarios; it does not ingest live plant telemetry.
+**Designed standard architecture:** Operational data ingestion, schema and quality controls, analytics, scenario models, enterprise-system interfaces, access control and monitoring.
+**Deferred:** Live ERP/MES/IoT integration, multi-party orchestration, autonomous agents, blockchain contracts and production rollout.
 
 ## Outcome and limits
 
