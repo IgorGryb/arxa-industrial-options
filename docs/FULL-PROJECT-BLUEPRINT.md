@@ -1,8 +1,5 @@
 # Full project blueprint — ARXA — Industrial Scenario and Real Options Platform
 
-> Controlling management update (2026-10-26): [Management dossier](MANAGEMENT-DOSSIER.md) defines business, product, operating, financial and technology-management scope. User practice and production implementation are not documentary gates. Earlier technical content below remains bounded supporting material, not the full portfolio mandate.
-
-
 Stable project ID: `PRJ-ARXA-PROTOTYPE`  
 Status: source-grounded target architecture; implementation and validation backlog  
 Evidence boundary: this document specifies what should be built and tested. Only linked test artifacts may support implementation claims.
@@ -50,9 +47,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** industrial decision charter  
 **Acceptance test:** An operations/reliability reviewer confirms the decision and proxy limitations.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
+**Course inputs:** `C419-049`, `C419-055`  
 **Maturity:** current L2 → target L5  
-**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
+**Open gap:** No selected real asset owner; archive lacks a dedicated supply-chain course.
 
 ### 2.2 market-business
 
@@ -62,9 +59,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** industry strategy and adoption memo  
 **Acceptance test:** A practitioner validates priority, buying constraints and rejects unsupported platform-scale claims.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
+**Course inputs:** `C419-005`, `C419-055`  
 **Maturity:** current L2 → target L5  
-**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
+**Open gap:** Broad market/ROI claims in the concept corpus are unsupported for publication.
 
 ### 2.3 product-service
 
@@ -74,9 +71,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** product and service blueprint  
 **Acceptance test:** Role scenarios correctly handle alert, abstention, override, completed work and observed outcome.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
+**Course inputs:** `C419-138`, `C419-161`  
 **Maturity:** current L3 → target L5  
-**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
+**Open gap:** Current prototype calculates a policy but lacks complete operational journeys.
 
 ### 2.4 operating-model
 
@@ -86,9 +83,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** maintenance decision runbook  
 **Acceptance test:** Tabletop exercise handles bad sensor, missed failure, unavailable part and disputed recommendation.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
+**Course inputs:** `C419-049`, `C419-154`  
 **Maturity:** current L2 → target L5  
-**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
+**Open gap:** No observed maintenance workflow or dedicated supply-chain source.
 
 ### 2.5 data-technology
 
@@ -98,9 +95,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** reference architecture and executable pipeline  
 **Acceptance test:** Temporal reproduction, schema drift, missingness, load and access tests meet declared thresholds.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
+**Course inputs:** `C419-121`, `C419-138`, `C419-140`, `C419-143`, `C419-154`, `C419-161`  
 **Maturity:** current L4 → target L5  
-**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
+**Open gap:** Synthetic prototype needs public time-series data and realistic operational scale tests.
 
 ### 2.6 analytical-model
 
@@ -110,9 +107,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** forecast and policy benchmark  
 **Acceptance test:** Model beats baseline on decision metric, survives degraded-data tests and exposes inconclusive cases.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
+**Course inputs:** `C419-035`, `C419-121`, `C419-143`, `C419-201`  
 **Maturity:** current L4 → target L5  
-**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
+**Open gap:** Existing corrected metric is narrow and based on synthetic data.
 
 ### 2.7 finance-economics
 
@@ -122,9 +119,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** investment and real-options model  
 **Acceptance test:** Sensitivity identifies decision reversals and an independent finance reviewer checks cash-flow logic.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
+**Course inputs:** `C419-035`, `C419-197`, `C419-201`  
 **Maturity:** current L3 → target L5  
-**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
+**Open gap:** Synthetic costs are illustrative and not calibrated to an asset.
 
 ### 2.8 risk-security-compliance
 
@@ -134,9 +131,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** industrial AI risk/control matrix  
 **Acceptance test:** Failure injection produces safe abstention/escalation; every critical control has owner and residual risk.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
+**Course inputs:** `C419-056`, `C419-190`  
 **Maturity:** current L2 → target L5  
-**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
+**Open gap:** No safety/cyber domain review or implemented access control.
 
 ### 2.9 delivery-governance
 
@@ -146,9 +143,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** delivery roadmap and model governance  
 **Acceptance test:** A model/policy update is traced through data, tests, operations, finance and dependent claims.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
+**Course inputs:** `C419-138`, `C419-161`, `C419-190`  
 **Maturity:** current L3 → target L5  
-**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
+**Open gap:** Far-future capabilities must be demoted to hypotheses/interfaces until implemented.
 
 ### 2.10 evidence-validation-publication
 
@@ -158,9 +155,9 @@ A credible industrial decision system should start with one asset, failure mode 
 
 **Required artifact:** industrial evidence dossier and case study  
 **Acceptance test:** No client, compliance, autonomous-agent or realized-ROI claim survives without evidence; user approves publication.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
+**Course inputs:** `C419-143`, `C419-190`, `C419-197`  
 **Maturity:** current L2 → target L6  
-**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
+**Open gap:** Current PDF/web are based on the synthetic baseline and require replacement.
 
 ## 3. Operating state model
 
@@ -230,20 +227,20 @@ The prediction, threshold and interpretation owner must be recorded before each 
 
 | Mapping | Layer | Course | Archive state | Practice/test | Evidence target |
 |---|---|---|---|---|---|
-| MOD-SPEC | operations | Electric Industry Operations and Markets | manifest-complete | use energy asset case or operational analogy | sector operations memo |
-| MOD-SPEC | business | Oil & Gas Industry Operations and Markets | manifest-complete | map upstream-to-downstream decision economics | industry case map |
-| MOD-SPEC | technology | Advanced Business Analytics: Excel Optimization & Simulation | manifest-complete | optimize maintenance policy under constraints | sensitivity report |
-| MOD-SPEC | technology | Advanced Analytics & AI Optimization with Microsoft Fabric | manifest-complete | design experiment and monitoring surface | technical architecture |
-| MOD-SPEC | technology | Big Data Management and Optimization | manifest-complete | define scale and partition assumptions | data architecture test |
-| MOD-SPEC | technology | Data Analytics and Machine Learning for Big Data | manifest-complete | compare forecasting baselines | model benchmark |
-| MOD-SPEC | operations | Indexing, Performance Optimization & Functions in SQL Server | manifest-complete | design operational query workload | performance report |
-| MOD-SPEC | technology | Microsoft Azure Machine Learning for Data Scientists | manifest-complete | add training/scoring separation and monitoring | model-operations card |
-| MOD-SPEC | finance-risk | Introduction to Financial Engineering and Risk Management | manifest-complete | formalize uncertainty and policy objective | model specification |
-| MOD-SPEC | governance | Risk Management and Financial Theory | manifest-complete | define override/escalation logic | risk-control memo |
-| MOD-SPEC | finance-risk | Modeling Risk and Realities | manifest-complete | pre-register distributions and scenario priors | forecast log |
-| MOD-SPEC | business | Corporate & Business Strategy | manifest-complete | choose beachhead and alternatives | strategy memo |
-| MOD-SPEC | governance | AI Strategy and Governance | manifest-complete | define human ownership and model-change gates | governance policy |
-| MOD-SPEC | finance-risk | Introduction to Corporate Finance | manifest-complete | connect options to NPV and financing | investment memo |
+| PRJSRC-0052 | operations | C419-049 — Electric Industry Operations and Markets | manifest-complete | use energy asset case or operational analogy | sector operations memo |
+| PRJSRC-0053 | business | C419-055 — Oil & Gas Industry Operations and Markets | manifest-complete | map upstream-to-downstream decision economics | industry case map |
+| PRJSRC-0054 | technology | C419-121 — Advanced Business Analytics: Excel Optimization & Simulation | manifest-complete | optimize maintenance policy under constraints | sensitivity report |
+| PRJSRC-0055 | technology | C419-138 — Advanced Analytics & AI Optimization with Microsoft Fabric | manifest-complete | design experiment and monitoring surface | technical architecture |
+| PRJSRC-0056 | technology | C419-140 — Big Data Management and Optimization | manifest-complete | define scale and partition assumptions | data architecture test |
+| PRJSRC-0057 | technology | C419-143 — Data Analytics and Machine Learning for Big Data | manifest-complete | compare forecasting baselines | model benchmark |
+| PRJSRC-0058 | operations | C419-154 — Indexing, Performance Optimization & Functions in SQL Server | manifest-complete | design operational query workload | performance report |
+| PRJSRC-0059 | technology | C419-161 — Microsoft Azure Machine Learning for Data Scientists | manifest-complete | add training/scoring separation and monitoring | model-operations card |
+| PRJSRC-0060 | finance-risk | C419-035 — Introduction to Financial Engineering and Risk Management | manifest-complete | formalize uncertainty and policy objective | model specification |
+| PRJSRC-0061 | governance | C419-056 — Risk Management and Financial Theory | manifest-complete | define override/escalation logic | risk-control memo |
+| PRJSRC-0062 | finance-risk | C419-201 — Modeling Risk and Realities | manifest-complete | pre-register distributions and scenario priors | forecast log |
+| PRJSRC-0063 | business | C419-005 — Corporate & Business Strategy | manifest-complete | choose beachhead and alternatives | strategy memo |
+| PRJSRC-0064 | governance | C419-190 — AI Strategy and Governance | manifest-complete | define human ownership and model-change gates | governance policy |
+| PRJSRC-0065 | finance-risk | C419-197 — Introduction to Corporate Finance | manifest-complete | connect options to NPV and financing | investment memo |
 
 All rows above currently mean source routing. They become competence evidence only after the stated practice/test is executed and recorded.
 
